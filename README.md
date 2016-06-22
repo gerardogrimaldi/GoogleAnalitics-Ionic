@@ -1,4 +1,4 @@
-# GoogleAnalitics-Ionic
+# Google Analytics - Ionic
 
 example implemented from this website
 
