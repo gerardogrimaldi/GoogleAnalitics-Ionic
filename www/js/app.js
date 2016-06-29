@@ -7,7 +7,7 @@
 // 'starter.controllers' is found in controllers.js
 angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
-.run(function($ionicPlatform) {
+.run(function($ionicPlatform, $ionicPopup) {
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
@@ -23,11 +23,20 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
     $ionicPlatform.ready(function() {
       if (typeof analytics !== 'undefined'){
+
         analytics.startTrackerWithId('UA-79414769-1');
-        console.log("Google Analytics loaded");
+        alert("Google Analytics loaded");
+        $ionicPopup.alert({
+          title: 'Alert',
+          template: 'Google Analytics loaded'
+        });
         analytics.trackView('Init');
       } else {
-        console.log("Google Analytics not loaded");
+        $ionicPopup.alert({
+          title: 'Alert',
+          template: 'Google Analytics notloaded'
+        });
+        alert("Google Analytics not loaded");
       }
     });
 
