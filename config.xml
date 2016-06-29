@@ -18,7 +18,7 @@
   <preference name="BackupWebStorage" value="none" />
   <preference name="SplashScreen" value="screen" />
   <plugin name="com.analytics.google" spec="1.2.2" source="pgb" />
-
+  <plugin name="com.analytics.google" spec="1.2.2" source="pgb" />
   <feature name="StatusBar">
     <param name="ios-package" onload="true" value="CDVStatusBar" />
   </feature>
@@ -74,5 +74,4 @@
       <splash height="960" src="resources/ios/splash/Default@2x~iphone.png" width="640" />
       <splash height="480" src="resources/ios/splash/Default~iphone.png" width="320" />
   </platform>
-  <plugin name="cordova-plugin-google-analytics" spec="https://github.com/danwilson/google-analytics-plugin.git" />
 </widget>
